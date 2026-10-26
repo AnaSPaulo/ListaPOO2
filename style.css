@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f5f6fc;
+    color: #252541;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #292750;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #7964e8;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #66657d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #7964e8;
+}
+
+.inicio {
+    background: linear-gradient(120deg, #292750, #5146a5, #7964e8);
+    padding: 90px 25px;
+    color: white;
+}
+
+.conteudo-inicio {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d5ceff;
+    border: 1px solid #9184e9;
+    padding: 9px 14px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.inicio h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.inicio h1 span {
+    color: #c9beff;
+}
+
+.inicio p {
+    max-width: 600px;
+    color: #e0def5;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #5146a5;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #e9e4ff;
+    transform: translateY(-3px);
+}
+
+.exercicios {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao > span {
+    color: #7964e8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.titulo-secao p {
+    color: #77768c;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.grade-exercicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #eae9f4;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    min-height: 230px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #a99af5;
+    box-shadow: 0 12px 30px rgba(55, 43, 115, 0.09);
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: #eeeaff;
+    color: #6955d4;
+    border-radius: 11px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #77768c;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.acessar {
+    color: #705ce0;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.sobre {
+    background-color: #ebe9fa;
+    padding: 45px max(25px, calc((100% - 1100px) / 2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.sobre-conteudo {
+    max-width: 650px;
+}
+
+.sobre h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    color: #686781;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.sobre-dado {
+    min-width: 180px;
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+.sobre-dado strong {
+    display: block;
+    color: #705ce0;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.sobre-dado span {
+    color: #77768c;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #252343;
+    color: #d6d4e9;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #c9beff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 950px) {
+    .grade-exercicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        padding: 16px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .menu {
+        gap: 13px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .inicio {
+        padding: 65px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .inicio p {
+        font-size: 14px;
+    }
+
+    .exercicios {
+        padding: 55px 18px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 25px;
+    }
+
+    .grade-exercicios {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 200px;
+    }
+
+    .sobre {
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
